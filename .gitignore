@@ -1,0 +1,29 @@
+# Local environments and Python output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated distributions
+dist/
+*.zip
+
+# Local artifacts and editor settings
+.agents/artifacts/
+.vscode/
+.idea/
+*.swp
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS metadata
+.DS_Store
+Thumbs.db

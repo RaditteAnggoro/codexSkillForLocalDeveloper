@@ -1,0 +1,30 @@
+name: Skill or tooling bug
+description: Report a reproducible workflow or validation problem.
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill or tool
+      description: Include the version or commit if known.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide a sanitized prompt, steps, and relevant environment details.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: Remove private source, secrets, and personal data.
+    validations:
+      required: true

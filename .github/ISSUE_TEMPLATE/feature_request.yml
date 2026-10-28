@@ -1,0 +1,22 @@
+name: Workflow improvement
+description: Propose a focused improvement to a skill or developer tool.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or repeated task
+      description: Give a concrete example of the current limitation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behaviour
+      description: Explain the smallest useful change and which skill should own it.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: How could we evaluate it?
+      description: Suggest a prompt or observable result that would demonstrate improvement.

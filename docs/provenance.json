@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project": "Codex Developer Skills",
+  "author": {
+    "name": "Raditte Anggoro",
+    "github": "RaditteAnggoro"
+  },
+  "repository": "https://github.com/RaditteAnggoro/codexSkillForLocalDeveloper",
+  "provenance_id": "RA.CODEXSKILLS.2026.10",
+  "license": "MIT",
+  "license_file": "LICENSE",
+  "source_acknowledgements": "docs/SOURCES.md",
+  "description": "Passive project authorship metadata included with the source distribution. Third-party sources retain their respective authorship and applicable license notices."
+}

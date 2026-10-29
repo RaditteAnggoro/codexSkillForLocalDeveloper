@@ -1,5 +1,7 @@
 # Codex Developer Skills
 
+<!-- Author: Raditte Anggoro | Provenance: RA.CODEXSKILLS.2026.10 | Metadata: docs/provenance.json -->
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Eight practical skills for working with Codex: make focused changes, investigate failures, verify results, clarify features, and understand unfamiliar code.

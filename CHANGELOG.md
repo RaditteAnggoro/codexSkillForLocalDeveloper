@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add passive author and project provenance metadata to the README source and distributed documentation.
+
 ## 0.1.0 — 2026-10-28
 
 - Eight focused skills covering implementation, debugging, verification, discovery, staged work, architecture, release readiness, and browser diagnostics.

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="600" viewBox="0 0 1280 600" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Developer Skills workflow</title>
+  <desc id="desc">A conceptual overview of eight developer skills. Start with your task, choose a focused workflow, and receive a result supported by source evidence and relevant checks. These are instructions for your existing coding agent, not a separate application.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1426"/>
+      <stop offset="1" stop-color="#142c3b"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1 1 L8 5 L1 9" fill="none" stroke="#7dd3fc" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="600" rx="24" fill="url(#background)"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="56" y="63" fill="#7dd3fc" font-size="15" font-weight="700" letter-spacing="2">CODEX DEVELOPER SKILLS</text>
+    <text x="56" y="119" fill="#f8fafc" font-size="39" font-weight="700">Your task. A focused workflow. Clear evidence.</text>
+    <text x="56" y="155" fill="#cbd5e1" font-size="19">Eight skills that work with the code, tools and conventions already in your project.</text>
+
+    <rect x="56" y="202" width="344" height="194" rx="16" fill="#15253b" stroke="#3b536e"/>
+    <rect x="468" y="202" width="344" height="194" rx="16" fill="#153040" stroke="#3f7188"/>
+    <rect x="880" y="202" width="344" height="194" rx="16" fill="#143a39" stroke="#3c8276"/>
+    <path d="M414 299 H450" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M826 299 H862" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <text x="80" y="240" fill="#7dd3fc" font-size="14" font-weight="700">01 / DESCRIBE</text>
+    <text x="80" y="280" fill="#f8fafc" font-size="25" font-weight="700">Start with your task</text>
+    <text x="80" y="318" fill="#cbd5e1" font-size="17">“Fix this failing test.”</text>
+    <text x="80" y="346" fill="#cbd5e1" font-size="17">“Show how this endpoint works.”</text>
+    <text x="80" y="374" fill="#cbd5e1" font-size="17">“Review these changes.”</text>
+
+    <text x="492" y="240" fill="#7dd3fc" font-size="14" font-weight="700">02 / WORK</text>
+    <text x="492" y="280" fill="#f8fafc" font-size="25" font-weight="700">Use the right skill</text>
+    <text x="492" y="318" fill="#cbd5e1" font-size="17">Inspect relevant source.</text>
+    <text x="492" y="346" fill="#cbd5e1" font-size="17">Follow existing patterns.</text>
+    <text x="492" y="374" fill="#cbd5e1" font-size="17">Stay within the requested scope.</text>
+
+    <text x="904" y="240" fill="#5eead4" font-size="14" font-weight="700">03 / VERIFY</text>
+    <text x="904" y="280" fill="#f8fafc" font-size="25" font-weight="700">Inspect the result</text>
+    <text x="904" y="318" fill="#cbd5e1" font-size="17">What changed or was found?</text>
+    <text x="904" y="346" fill="#cbd5e1" font-size="17">Which checks actually ran?</text>
+    <text x="904" y="374" fill="#cbd5e1" font-size="17">What remains uncertain?</text>
+
+    <text x="56" y="448" fill="#f8fafc" font-size="18" font-weight="700">Choose a workflow that fits</text>
+    <text x="56" y="485" fill="#cbd5e1" font-size="17">Implement / review</text>
+    <text x="352" y="485" fill="#cbd5e1" font-size="17">Debug</text>
+    <text x="648" y="485" fill="#cbd5e1" font-size="17">Verify</text>
+    <text x="944" y="485" fill="#cbd5e1" font-size="17">Discover a feature</text>
+    <text x="56" y="521" fill="#cbd5e1" font-size="17">Work across sessions</text>
+    <text x="352" y="521" fill="#cbd5e1" font-size="17">Map architecture</text>
+    <text x="648" y="521" fill="#cbd5e1" font-size="17">Assess a release</text>
+    <text x="944" y="521" fill="#cbd5e1" font-size="17">Diagnose a browser UI</text>
+    <text x="56" y="567" fill="#94a3b8" font-size="14">WORKFLOW ILLUSTRATION • Instructions for your existing agent • Actual behavior depends on available tools</text>
+  </g>
+</svg>

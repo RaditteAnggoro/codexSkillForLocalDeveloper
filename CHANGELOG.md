@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Add a visual README tour with a workflow illustration, task-routing diagram and expandable prompt walkthroughs.
 - Add passive author and project provenance metadata to the README source and distributed documentation.
 
 ## 0.1.0 — 2026-10-28

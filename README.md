@@ -8,6 +8,12 @@ Eight practical skills for working with Codex: make focused changes, investigate
 
 Each workflow has its own `SKILL.md`. Load the one the task needs, use the project's existing tools, and keep evidence behind completion claims.
 
+![Conceptual workflow: describe your task, select a focused skill, inspect the code, and return an evidence-backed result.](docs/assets/skills-workflow.svg)
+
+*Workflow illustration, not an application screenshot. The skills guide the agent inside your existing development project.*
+
+[Get started](#quick-start) · [Choose a workflow](#choose-your-workflow) · [Try a task](#try-a-task) · [All eight skills](#skills) · [Development](#development)
+
 ## Quick start
 
 1. Clone this repository or download its source ZIP.
@@ -24,6 +30,77 @@ before handing it back.
 The discovery path in the target project must be `.agents/skills/<skill-name>/SKILL.md`. Do not copy this repository as an extra nested folder and expect its skills to apply to the parent project. Codex detects skill changes; restart it if the new skills do not appear. See the [official local-skills documentation](https://learn.chatgpt.com/docs/build-skills).
 
 On macOS, press Command-Shift-period to show the hidden `.agents` folder. Merge existing directories carefully. Same-name skills from different locations do not merge; keep one active copy or invoke the desired `SKILL.md` by its path.
+
+## Choose your workflow
+
+Start with the outcome you need. This diagram shows common routes; it does not install tools or run commands by itself.
+
+```mermaid
+flowchart TD
+    A[What do you need help with?] --> B{Task}
+    B -->|A failure to understand or fix| C[systematic-debugging]
+    B -->|A clear code change or review| D[lean-senior-engineering]
+    B -->|A feature with open decisions| E[feature-discovery]
+    B -->|An unfamiliar data flow| F[architecture-map]
+    B -->|Work across modules or sessions| G[research-plan-implement]
+    B -->|A browser interaction| H[browser-diagnostics]
+    C --> I[Relevant checks and disclosed gaps]
+    D --> I
+    G --> I
+    H --> I
+    I --> J[verification-before-completion]
+    J --> K[Result with evidence]
+    E --> L[Decisions and acceptance criteria]
+    F --> M[Diagram tied to source files]
+    K --> N[release-readiness when assessing a release]
+```
+
+Diagnosis, review and planning requests keep their requested scope. For example, “diagnose only” produces findings; it does not authorize a fix. Use the linked [skill catalog](#skills) to inspect any workflow before trying it.
+
+## Try a task
+
+Open a scenario below, replace the bracketed input, and paste the prompt into Codex from your project. These are illustrative walkthroughs, not recorded executions or guaranteed results.
+
+<details>
+<summary><strong>Fix a failing test</strong> — reproduce → explain → change → verify</summary>
+
+```text
+Use $systematic-debugging to reproduce and fix [failing scenario].
+The command is [test command] and the output is [relevant failure].
+Keep the fix focused and use $verification-before-completion.
+```
+
+Look for a reproduction when the environment permits, a cause tied to the affected code, a focused fix and a check of the original case. If a dependency is unavailable, the agent should say which check it could not run.
+
+</details>
+
+<details>
+<summary><strong>Understand an unfamiliar app</strong> — input → processing → storage → response</summary>
+
+```text
+Use $architecture-map to trace [endpoint or UI action].
+Show validation, transformations, storage and the response,
+with a diagram and links to the relevant source. Do not edit code.
+```
+
+Look for a source-backed flow with unknowns labeled. Static inspection explains the implementation; it should not be presented as a captured runtime trace.
+
+</details>
+
+<details>
+<summary><strong>Shape a feature before building it</strong> — inspect → decide → define acceptance</summary>
+
+```text
+Use $feature-discovery to plan [feature].
+Inspect the current flow, ask only questions that change the design,
+and produce observable acceptance criteria. Planning only.
+```
+
+Look for the decisions that affect scope and a small set of testable outcomes. When you are ready to implement, ask for the chosen change explicitly.
+
+</details>
+
+For more prompts, including review, browser diagnosis and resumable work, see [Try the skills in Codex](docs/TRY-IT.md).
 
 ## Skills
 
